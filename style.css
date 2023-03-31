@@ -1,0 +1,245 @@
+* {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(/30923410_abstract1_01.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+/* navbar */
+.wrapper-nav {
+    width: 70%;
+    margin: auto;
+    position: relative;
+}
+
+.logo {
+    float: left;
+}
+
+.logo a {
+    font-family: apexfont;
+    color: black;
+    font-size: 50px;
+    text-shadow: 4px 2px #FF5D5D;
+}
+
+.menu {
+    float: right;
+}
+
+.symbol {
+    color: black;
+}
+
+nav {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    line-height: 80px;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    backdrop-filter: blur(100px);
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: evilempire;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+a.tbl-red {
+    background: #FB2576;
+    border-radius: 20px;
+    margin: 5px;
+    padding: 15px 20px 15px 20px;
+    color: #006ba8;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+a.tbl-red:hover {
+    background: gray;
+    text-decoration: none;
+}
+
+a.tbl-white {
+    background: white;
+    border-radius: 20px;
+    margin: 5px;
+    padding: 15px 20px 15px 20px;
+    color: #006ba8;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+a.tbl-white:hover {
+    background: gray;
+    text-decoration: none;
+}
+/* navbar end */
+
+/* content */
+.container {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.wrapper-text {
+    width: 574px;
+    margin-top: 100px;
+    margin-left: 300px;
+    font-family: evilempire;
+}
+
+.wrapper-text h1 {
+    font-size: 80px;
+}
+
+.wrapper-text h2 {
+    font-size: 55px;
+}
+
+.wrapper-text p {
+    font-family: comicfont;
+    font-size: 20px;
+}
+
+.button {
+    width: 170px;
+    height: 50px;
+    background-color: red;
+    border: none;
+    font-size: 30px;
+    border-radius: 50px;
+    transition: 0.5s;
+}
+
+.button a {
+    color: white;
+    text-decoration: none;
+    font-family: fontsubscribe;
+}
+
+.button:hover {
+    background-color: gray;
+}
+
+.rating-star {
+    position: absolute;
+    margin-left: 190px;
+    margin-top: -40px;
+}
+
+.wrapper-content-image{
+    margin: auto;
+    margin-top: 100px;
+    margin-right: 300px;
+    width: 512px;
+    border-radius: 100px;
+    overflow: hidden;
+}
+
+.slide-image {
+    display: flex;
+}
+
+#slide-1:target ~ .slide-image {
+    margin-left: 0px;
+}
+
+#slide-1:target ~ .slide-image {
+    margin-left: -100%;
+}
+
+.navigation-slider a {
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    background-color: #0E8388;
+    font-size: 0px;
+    border-radius: 50%;
+    margin: 3px;
+    transition: 1s;
+}
+
+.navigation-slider a:hover {
+    background-color: beige;
+}
+
+.navigation-slider {
+    position: absolute;
+    margin-left: 800px;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin-top: -30px;
+}
+/* content end */
+
+/* font */
+@font-face {
+    font-family: fontsubscribe;
+    src: url(/JandaManateeSolid.ttf);
+}
+
+@font-face {
+    font-family: comicfont;
+    src: url(/Hey\ Comic.ttf);
+}
+
+@font-face{
+    font-family: apexfont;
+    src: url('/Apex\ Regular.ttf');
+}
+
+@font-face{
+    font-family: evilempire;
+    src: url('/Evil\ Empire.ttf');
+}
+/* font */
+
+@media only screen and (max-width: 500px) {
+
+    .wrapper-nav {
+    width: 100%;
+   }
+
+   .symbol {
+    display: flex;
+    width: 450px;
+   }
+
+  }
